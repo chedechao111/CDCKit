@@ -15,6 +15,8 @@
 		F83A9D5420732A99006C8D46 /* CDCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F83A9D5320732A99006C8D46 /* CDCKitTests.m */; };
 		F83A9D5F20732A99006C8D46 /* CDCKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F83A9D5E20732A99006C8D46 /* CDCKitUITests.m */; };
 		F83A9D6E20732ADC006C8D46 /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83A9D6D20732ADC006C8D46 /* CDMainViewController.m */; };
+		F87F726920ADA81F00D57391 /* CDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F726820ADA81F00D57391 /* CDButton.m */; };
+		F87F729520AEA7F700D57391 /* ASTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F729420AEA7F700D57391 /* ASTestViewController.m */; };
 		F881D070207C8464008D9054 /* CDCheckSubThreadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F881D06F207C8464008D9054 /* CDCheckSubThreadOperation.m */; };
 		F881D0A4207CB5BD008D9054 /* CDPresentFromVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F881D0A3207CB5BD008D9054 /* CDPresentFromVC.m */; };
 		F881D0A7207CB5CE008D9054 /* CDPresentToVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F881D0A6207CB5CE008D9054 /* CDPresentToVC.m */; };
@@ -66,6 +68,7 @@
 		F8E712D1208779F600F267E5 /* proxy-property.js in Resources */ = {isa = PBXBuildFile; fileRef = F8E712B9208779F600F267E5 /* proxy-property.js */; };
 		F8E712D2208779F600F267E5 /* dispatch-event-async.js in Resources */ = {isa = PBXBuildFile; fileRef = F8E712BA208779F600F267E5 /* dispatch-event-async.js */; };
 		F8E712D3208779F600F267E5 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = F8E712BB208779F600F267E5 /* .travis.yml */; };
+		FD7542DAE5924CC69479F208 /* libPods-CDCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B200F5B7D6D6D42026ED641 /* libPods-CDCKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +86,54 @@
 			remoteGlobalIDString = F83A9D3620732A99006C8D46;
 			remoteInfo = CDCKit;
 		};
+		F87F727020ADB3BF00D57391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F726A20ADB3BF00D57391 /* AsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B35061DA1B010EDF0018CF92;
+			remoteInfo = AsyncDisplayKit;
+		};
+		F87F727220ADB3BF00D57391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F726A20ADB3BF00D57391 /* AsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 058D09BC195D04C000B7D73C;
+			remoteInfo = AsyncDisplayKitTests;
+		};
+		F87F727420ADB3BF00D57391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F726A20ADB3BF00D57391 /* AsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 057D02BF1AC0A66700C7AC3C;
+			remoteInfo = AsyncDisplayKitTestHost;
+		};
+		F87F728920ADB41E00D57391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F728320ADB41E00D57391 /* AsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B35061DA1B010EDF0018CF92;
+			remoteInfo = AsyncDisplayKit;
+		};
+		F87F728B20ADB41E00D57391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F728320ADB41E00D57391 /* AsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 058D09BC195D04C000B7D73C;
+			remoteInfo = AsyncDisplayKitTests;
+		};
+		F87F728D20ADB41E00D57391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F728320ADB41E00D57391 /* AsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 057D02BF1AC0A66700C7AC3C;
+			remoteInfo = AsyncDisplayKitTestHost;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B200F5B7D6D6D42026ED641 /* libPods-CDCKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDCKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78EB101864D427EE28E5ACB /* Pods-CDCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDCKit/Pods-CDCKit.release.xcconfig"; sourceTree = "<group>"; };
+		E3EAB84F17C4AD63E9828F6E /* Pods-CDCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDCKit/Pods-CDCKit.debug.xcconfig"; sourceTree = "<group>"; };
 		F825C71B208E080B00D3C449 /* CDVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDVideo.h; sourceTree = "<group>"; };
 		F825C71C208E080B00D3C449 /* CDVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDVideo.m; sourceTree = "<group>"; };
 		F83A9D3720732A99006C8D46 /* CDCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +151,12 @@
 		F83A9D6020732A99006C8D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F83A9D6C20732ADC006C8D46 /* CDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMainViewController.h; sourceTree = "<group>"; };
 		F83A9D6D20732ADC006C8D46 /* CDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMainViewController.m; sourceTree = "<group>"; };
+		F87F726720ADA81F00D57391 /* CDButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDButton.h; sourceTree = "<group>"; };
+		F87F726820ADA81F00D57391 /* CDButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDButton.m; sourceTree = "<group>"; };
+		F87F726A20ADB3BF00D57391 /* AsyncDisplayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AsyncDisplayKit.xcodeproj; path = "../../../../Texture-master/AsyncDisplayKit.xcodeproj"; sourceTree = "<group>"; };
+		F87F728320ADB41E00D57391 /* AsyncDisplayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AsyncDisplayKit.xcodeproj; path = "../../../Texture-master/AsyncDisplayKit.xcodeproj"; sourceTree = "<group>"; };
+		F87F729320AEA7F700D57391 /* ASTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTestViewController.h; sourceTree = "<group>"; };
+		F87F729420AEA7F700D57391 /* ASTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTestViewController.m; sourceTree = "<group>"; };
 		F881D06E207C8464008D9054 /* CDCheckSubThreadOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCheckSubThreadOperation.h; sourceTree = "<group>"; };
 		F881D06F207C8464008D9054 /* CDCheckSubThreadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCheckSubThreadOperation.m; sourceTree = "<group>"; };
 		F881D0A2207CB5BD008D9054 /* CDPresentFromVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDPresentFromVC.h; sourceTree = "<group>"; };
@@ -189,6 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7542DAE5924CC69479F208 /* libPods-CDCKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +264,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		454EE18A4766103128A0B17C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B200F5B7D6D6D42026ED641 /* libPods-CDCKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A579E79A5611E082D5054BF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3EAB84F17C4AD63E9828F6E /* Pods-CDCKit.debug.xcconfig */,
+				C78EB101864D427EE28E5ACB /* Pods-CDCKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F825C71A208E07F200D3C449 /* Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +297,8 @@
 				F83A9D5220732A99006C8D46 /* CDCKitTests */,
 				F83A9D5D20732A99006C8D46 /* CDCKitUITests */,
 				F83A9D3820732A99006C8D46 /* Products */,
+				A579E79A5611E082D5054BF8 /* Pods */,
+				454EE18A4766103128A0B17C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,6 +315,8 @@
 		F83A9D3920732A99006C8D46 /* CDCKit */ = {
 			isa = PBXGroup;
 			children = (
+				F87F728320ADB41E00D57391 /* AsyncDisplayKit.xcodeproj */,
+				F87F726620ADA80900D57391 /* CDButton */,
 				F8DF4A682091A2A6002693E9 /* recycleView */,
 				F825C71A208E07F200D3C449 /* Video */,
 				F8E712A0208779F600F267E5 /* iphone-inline-video-master */,
@@ -250,6 +326,8 @@
 				F83A9D3B20732A99006C8D46 /* AppDelegate.m */,
 				F83A9D6C20732ADC006C8D46 /* CDMainViewController.h */,
 				F83A9D6D20732ADC006C8D46 /* CDMainViewController.m */,
+				F87F729320AEA7F700D57391 /* ASTestViewController.h */,
+				F87F729420AEA7F700D57391 /* ASTestViewController.m */,
 				F83A9D4320732A99006C8D46 /* Assets.xcassets */,
 				F83A9D4520732A99006C8D46 /* LaunchScreen.storyboard */,
 				F83A9D4820732A99006C8D46 /* Info.plist */,
@@ -275,6 +353,35 @@
 				F83A9D6020732A99006C8D46 /* Info.plist */,
 			);
 			path = CDCKitUITests;
+			sourceTree = "<group>";
+		};
+		F87F726620ADA80900D57391 /* CDButton */ = {
+			isa = PBXGroup;
+			children = (
+				F87F726720ADA81F00D57391 /* CDButton.h */,
+				F87F726820ADA81F00D57391 /* CDButton.m */,
+			);
+			path = CDButton;
+			sourceTree = "<group>";
+		};
+		F87F726B20ADB3BF00D57391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87F727120ADB3BF00D57391 /* AsyncDisplayKit.framework */,
+				F87F727320ADB3BF00D57391 /* AsyncDisplayKitTests.xctest */,
+				F87F727520ADB3BF00D57391 /* AsyncDisplayKitTestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87F728420ADB41E00D57391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87F728A20ADB41E00D57391 /* AsyncDisplayKit.framework */,
+				F87F728C20ADB41E00D57391 /* AsyncDisplayKitTests.xctest */,
+				F87F728E20ADB41E00D57391 /* AsyncDisplayKitTestHost.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F881D09D207CB0E3008D9054 /* testTransition */ = {
@@ -351,6 +458,7 @@
 		F8A48816207B8E2200E69E75 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F87F726A20ADB3BF00D57391 /* AsyncDisplayKit.xcodeproj */,
 				F8981E2E20A3E6AC0000018B /* UILabel */,
 				F8E7125D208494C300F267E5 /* UITranslation */,
 				F881D0B1207CB6EA008D9054 /* UIButton */,
@@ -518,6 +626,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F83A9D6320732A99006C8D46 /* Build configuration list for PBXNativeTarget "CDCKit" */;
 			buildPhases = (
+				2B52F3539CCD78F44A4019D3 /* [CP] Check Pods Manifest.lock */,
 				F83A9D3320732A99006C8D46 /* Sources */,
 				F83A9D3420732A99006C8D46 /* Frameworks */,
 				F83A9D3520732A99006C8D46 /* Resources */,
@@ -603,6 +712,16 @@
 			mainGroup = F83A9D2E20732A99006C8D46;
 			productRefGroup = F83A9D3820732A99006C8D46 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F87F726B20ADB3BF00D57391 /* Products */;
+					ProjectRef = F87F726A20ADB3BF00D57391 /* AsyncDisplayKit.xcodeproj */;
+				},
+				{
+					ProductGroup = F87F728420ADB41E00D57391 /* Products */;
+					ProjectRef = F87F728320ADB41E00D57391 /* AsyncDisplayKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F83A9D3620732A99006C8D46 /* CDCKit */,
@@ -611,6 +730,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F87F727120ADB3BF00D57391 /* AsyncDisplayKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AsyncDisplayKit.framework;
+			remoteRef = F87F727020ADB3BF00D57391 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F87F727320ADB3BF00D57391 /* AsyncDisplayKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AsyncDisplayKitTests.xctest;
+			remoteRef = F87F727220ADB3BF00D57391 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F87F727520ADB3BF00D57391 /* AsyncDisplayKitTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AsyncDisplayKitTestHost.app;
+			remoteRef = F87F727420ADB3BF00D57391 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F87F728A20ADB41E00D57391 /* AsyncDisplayKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AsyncDisplayKit.framework;
+			remoteRef = F87F728920ADB41E00D57391 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F87F728C20ADB41E00D57391 /* AsyncDisplayKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AsyncDisplayKitTests.xctest;
+			remoteRef = F87F728B20ADB41E00D57391 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F87F728E20ADB41E00D57391 /* AsyncDisplayKitTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AsyncDisplayKitTestHost.app;
+			remoteRef = F87F728D20ADB41E00D57391 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F83A9D3520732A99006C8D46 /* Resources */ = {
@@ -663,6 +827,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B52F3539CCD78F44A4019D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDCKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F83A9D3320732A99006C8D46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -672,6 +857,7 @@
 				F8E7126120849D7500F267E5 /* CDCircleFromController.m in Sources */,
 				F881D0A4207CB5BD008D9054 /* CDPresentFromVC.m in Sources */,
 				F881D0F3207DDF89008D9054 /* UIView+anchorPoint.m in Sources */,
+				F87F729520AEA7F700D57391 /* ASTestViewController.m in Sources */,
 				F8A487F0207A21F900E69E75 /* CDDynamicViewController.m in Sources */,
 				F8981E3120A3E6C10000018B /* UILabel+cutTextInMaxWidth.m in Sources */,
 				F8DF4A5A20904F1E002693E9 /* CDMainView.m in Sources */,
@@ -683,6 +869,7 @@
 				F881D0EC207DB713008D9054 /* CDNavTranslation.m in Sources */,
 				F83A9D3C20732A99006C8D46 /* AppDelegate.m in Sources */,
 				F881D0E9207DB6E9008D9054 /* CDVC2.m in Sources */,
+				F87F726920ADA81F00D57391 /* CDButton.m in Sources */,
 				F8A487ED207A1F9800E69E75 /* CDTableViewController.m in Sources */,
 				F881D0B4207CDFBE008D9054 /* CDDriverInteractiveTransLation.m in Sources */,
 				F8E4243120AC257800E48A03 /* CDRecycleView.m in Sources */,
@@ -850,6 +1037,7 @@
 		};
 		F83A9D6420732A99006C8D46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3EAB84F17C4AD63E9828F6E /* Pods-CDCKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -867,6 +1055,7 @@
 		};
 		F83A9D6520732A99006C8D46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78EB101864D427EE28E5ACB /* Pods-CDCKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;

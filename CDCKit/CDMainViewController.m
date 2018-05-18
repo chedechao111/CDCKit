@@ -14,7 +14,7 @@
 #import "CDMainView.h"
 #import "CDProgressView.h"
 #import "CDRecycleView.h"
-
+#import "CDButton.h"
 
 #if defined(__BIG_ENDIAN__)
 #define __CF_BIG_ENDIAN__ 1
@@ -83,6 +83,16 @@ typedef struct RuntimeBaseHackBlorf {
     [recycle autoLayoutStartLocation];
     [self.view addSubview:recycle];
     [recycle reloadData];
+    
+    CDButton *btn = [[CDButton alloc] init];
+    [btn setFrame:CGRectMake(0, recycle.bottom, self.view.width, 60)];
+    btn.backgroundColor = [UIColor redColor];
+    [btn addTarget:self action:@selector(test)];
+    [self.view addSubview:btn];
+}
+
+- (void)test {
+    NSLog(@"56789op");
 }
 
 -(UIView *)recycleCell:(UICollectionViewCell *)recycleCell cellForItemAtIndex:(int)index{

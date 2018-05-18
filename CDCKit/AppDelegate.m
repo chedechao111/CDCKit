@@ -12,6 +12,7 @@
 #import "CDCheckSubThreadOperation.h"
 #import "CDCircleFromController.h"
 #import "presentView.h"
+#import "ASTestViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    CDTableViewController *mainVC = [CDTableViewController new];
 //    CDCircleFromController *mainVC = [CDCircleFromController new];
-    CDMainViewController *mainVC = [CDMainViewController new];
+//    CDMainViewController *mainVC = [CDMainViewController new];
+    ASTestViewController *mainVC = [ASTestViewController new];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = nav;
