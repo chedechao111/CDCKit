@@ -14,9 +14,9 @@
 
 @implementation CDCell
 {
-    ASNetworkImageNode *_imageNode;
     ASTextNode *_textNode;
-    CALayer *_maskL;
+
+    NSArray *_imageArr;
 }
 
 - (instancetype)init
@@ -35,33 +35,40 @@
     [self addSubnode:textNode];
     _textNode = textNode;
     
-    ASNetworkImageNode *imageNode = [[ASNetworkImageNode alloc] init];
-    imageNode.URL = [NSURL URLWithString:@"http://img05.tooopen.com/images/20140328/sy_57865838889.jpg"];
-//    imageNode.frame = CGRectMake(0, 0, 40, 40);
-    NSLog(@"i'm cell. i'm in %@",[NSThread currentThread]);
-    [self.view addSubnode:imageNode];
-    CALayer *maskL = [[CALayer alloc] init];
-    maskL.contents = (id) [UIImage imageNamed:@"head_background"].CGImage;
-    _imageNode.layer.mask = maskL;
-    _imageNode.layer.masksToBounds = YES;
-    _maskL = maskL;
-    _imageNode = imageNode;
+    NSMutableArray *tempImageArr = [NSMutableArray array];
+    for (NSUInteger i = 0 ; i < 5; i++) {
+        ASNetworkImageNode *imageNode = [[ASNetworkImageNode alloc] init];
+//        imageNode.backgroundColor = [UIColor blackColor];
+//        imageNode.URL = [NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526880861368&di=2ed63e32545cefc1349a946335b28959&imgtype=0&src=http%3A%2F%2Fp.yjbys.com%2Fimage%2F20161018%2F1476763524820960.jpg"];
+        [imageNode setImage:[UIImage imageNamed:@"timg"]];
+        [self addSubnode:imageNode];
+        imageNode.layerBacked = YES;
+        [tempImageArr addObject:imageNode];
+    }
+    _imageArr = tempImageArr;
 }
 
 - (void)didLoad {
     [super didLoad];
-    NSLog(@"i'm didLoad. i'm in %@",[NSThread currentThread]);
-//    CALayer *maskL = [[CALayer alloc] init];
-//    maskL.contents = (id) [UIImage imageNamed:@"head_background"].CGImage;
-//    _imageNode.layer.mask = maskL;
-//    _imageNode.layer.masksToBounds = YES;
-//    _maskL = maskL;
+    for (ASNetworkImageNode *imageNode in _imageArr) {
+        CALayer *maskL = [[CALayer alloc] init];
+        maskL.frame = CGRectMake(0, 0, 40, 40);
+        maskL.contents = (id) [UIImage imageNamed:@"head_background"].CGImage;
+        imageNode.layer.mask = maskL;
+        imageNode.layer.masksToBounds = YES;
+        imageNode.layer.shouldRasterize = YES;
+        imageNode.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    }
 }
 
 - (void)layout {
     [super layout];
-    _maskL.frame = CGRectMake(0, 0, 40, 40);
-    _imageNode.frame = CGRectMake(0, 0, 40, 40);
+    CGRect preFrame = CGRectZero;
+    for (ASNetworkImageNode *imageNode in _imageArr) {
+        imageNode.frame = CGRectMake(CGRectGetMaxX(preFrame), 0, 40, 40);
+        preFrame = imageNode.frame;
+    }
+
 }
 
 @end
